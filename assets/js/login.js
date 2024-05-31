@@ -4,9 +4,9 @@ function login() {
     var user = document.getElementById("user").value;
     var pwd = document.getElementById("pass").value;
 var respuesta = "";
-    //user = window.btoa(user);
-    //pwd = window.btoa(pwd);
-    //alert(cn_ws + "Comando=Loginapp&User=" + user + "&Pwd=" + pwd );
+    user = window.btoa(user);
+    pwd = window.btoa(pwd);
+    alert(cn_ws + "Comando=Loginapp&User=" + user + "&Pwd=" + pwd );
     if(user != '' && pwd != ''){  
     
     $.ajax({
