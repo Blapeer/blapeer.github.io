@@ -6,7 +6,7 @@ function login() {
 var respuesta = "";
     user = window.btoa(user);
     pwd = window.btoa(pwd);
-    alert(cn_ws + "Comando=Loginapp&User=" + user + "&Pwd=" + pwd );
+    //alert(cn_ws + "Comando=Loginapp&User=" + user + "&Pwd=" + pwd );
     if(user != '' && pwd != ''){  
     
     $.ajax({
