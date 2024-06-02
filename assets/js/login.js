@@ -80,7 +80,7 @@ function info(user){
 
              localStorage.setItem("nom", dato[0]);
            localStorage.setItem("apaterno", dato[1]);
-           localStorage.setItem("materno", dato[2]);
+           localStorage.setItem("amaterno", dato[2]);
         },
         error: function (jqXmlHttpRequest, textStatus, errorThrown) {   
         }
