@@ -28,7 +28,8 @@ var respuesta = "";
             }
             else{
 
-                error("Datos incorrectos");               
+             //   error("Datos incorrectos");   
+                 msgAlert("error", "Mensaje", "Usuario o contraseña incorrecto");
                 setTimeout(loader, 2500);
             
 
@@ -36,14 +37,16 @@ var respuesta = "";
         },
         error: function (jqXmlHttpRequest, textStatus, errorThrown) {
 
-            error("Verifique su conexión");
+          //  error("Verifique su conexión");
+             msgAlert("error", "Mensaje", "Verifique su conexión");
             setTimeout(loader, 2500);
             
         }
     });
     }
     else{
-        advertencia("Agregue los datos solicitados");
+        msgAlert("warning", "Mensaje", "Agregue los datos solicitados");
+       
         if(user.value == ""){
             user.style.border = '3px solid red';  
         }
