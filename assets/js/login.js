@@ -77,6 +77,10 @@ function info(user){
             localStorage.setItem("carrera", dato[10]); 
             localStorage.setItem("curp", dato[14]); 
             localStorage.setItem("rol", dato[10]);
+
+             localStorage.setItem("nom", dato[0]);
+           localStorage.setItem("apaterno", dato[1]);
+           localStorage.setItem("materno", dato[2]);
         },
         error: function (jqXmlHttpRequest, textStatus, errorThrown) {   
         }
