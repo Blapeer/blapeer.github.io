@@ -33,9 +33,10 @@ function EditarPerfil() {
 			console.log(result);
              var fecha = "";
 
-               correcto('Datos Agregados');   
+               //correcto('Datos Agregados');   
+			 msgAlert("success", "Mensaje", "Registro agregado");
                setTimeout(loader, 2500); 
-               //setTimeout('login()', 2600);
+               setTimeout('login()', 2600);
            
                			   
                 },
