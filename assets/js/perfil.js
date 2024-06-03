@@ -14,7 +14,7 @@ function EditarPerfil() {
 	app = app.split(' ');
 	var ap = app[0];
 	var am = app[1];
-	var nom = n +"|"+ ap +"|"+ am;
+	var nom = n;
 	
 	var depto = "";
 	var cargo = "1";
