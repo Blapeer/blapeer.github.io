@@ -4,32 +4,30 @@ function subirImagen(){
 }
     
 function EditarPerfil() {   
-var email = document.getElementById("email").value;
-
-      email = window.btoa(email);
-
-     
- 	    var pwd = document.getElementById("pass").value;
- 			var n =  document.getElementById("nombre").value;
-       var telefono = document.getElementById("telefono").value;
-
- 			var ap = "";
- 			var am = "";
- 			var nom = n +"|"+ ap +"|"+ am;
- 
- 			var depto = "";
-		    var cargo = "1";
-		    var matricula = "";
-		    
-		    var  semestre = "";
-		    var nss = "";
-		    var carrera = "";
-		    var curp = "BLAP230103";
+	var email = document.getElementById("email").value;
+	
+	email = window.btoa(email);    
+	var pwd = document.getElementById("pass").value;
+	var n =  document.getElementById("nombre").value;
+	var app =  document.getElementById("txtAp").value;
+	var telefono = document.getElementById("telefono").value;
+	app = app.split(' ');
+	var ap = app[0];
+	var am = app[1];
+	var nom = n +"|"+ ap +"|"+ am;
+	
+	var depto = "";
+	var cargo = "1";
+	var matricula = "";	
+	
+	var  semestre = "";
+	var nss = "";
+	var carrera = "";
+	var curp = "BLAP230103";
         var fecha = "2022-12-16";
-	console.log(cn_ws + "Comando=EditperfilBlap&Email=" + email + "&Pwd="+pwd+"&Nom="+nom+"&Ap="+nom+"&Am="+nom+"&Cargo="+cargo+"&Tel2="+telefono+"&Curp="+curp+"&Nss="+nss+"&Sueldo="+matricula+"&Depto="+depto + "&Fecha=" + fecha);
-          $.ajax({
+	    $.ajax({
                 type: "GET",
-                url: cn_ws + "Comando=EditperfilBlap&Email=" + email + "&Pwd="+pwd+"&Nom="+nom+"&Ap="+nom+"&Am="+nom+"&Cargo="+cargo+"&Tel2="+telefono+"&Curp="+curp+"&Nss="+nss+"&Sueldo="+matricula+"&Depto="+depto + "&Fecha=" + fecha,
+                url: cn_ws + "Comando=EditperfilBlap&Email=" + email + "&Pwd="+pwd+"&Nom="+nom+"&Ap="+ap+"&Am="+am+"&Cargo="+cargo+"&Tel2="+telefono+"&Curp="+curp+"&Nss="+nss+"&Sueldo="+matricula+"&Depto="+depto + "&Fecha=" + fecha,
                 success: function (result) {  
 
 			console.log(result);
