@@ -37,7 +37,7 @@ var email = document.getElementById("email").value;
 
                correcto('Datos Agregados');   
                setTimeout(loader, 2500); 
-               setTimeout('login()', 2600);
+               //setTimeout('login()', 2600);
            
                			   
                 },
