@@ -26,10 +26,10 @@ var email = document.getElementById("email").value;
 		    var carrera = "";
 		    var curp = "BLAP230103";
         var fecha = "2022-12-16";
-	console.log(cn_ws + "Comando=Editperfil&Email=" + email + "&Pwd="+pwd+"&Nom="+nom+"&Ap="+nom+"&Am="+nom+"&Cargo="+cargo+"&Tel2="+telefono+"&Curp="+curp+"&Nss="+nss+"&Sueldo="+matricula+"&Depto="+depto + "&Fecha=" + fecha);
+	console.log(cn_ws + "Comando=EditperfilBlap&Email=" + email + "&Pwd="+pwd+"&Nom="+nom+"&Ap="+nom+"&Am="+nom+"&Cargo="+cargo+"&Tel2="+telefono+"&Curp="+curp+"&Nss="+nss+"&Sueldo="+matricula+"&Depto="+depto + "&Fecha=" + fecha);
           $.ajax({
                 type: "GET",
-                url: cn_ws + "Comando=Editperfil&Email=" + email + "&Pwd="+pwd+"&Nom="+nom+"&Ap="+nom+"&Am="+nom+"&Cargo="+cargo+"&Tel2="+telefono+"&Curp="+curp+"&Nss="+nss+"&Sueldo="+matricula+"&Depto="+depto + "&Fecha=" + fecha,
+                url: cn_ws + "Comando=EditperfilBlap&Email=" + email + "&Pwd="+pwd+"&Nom="+nom+"&Ap="+nom+"&Am="+nom+"&Cargo="+cargo+"&Tel2="+telefono+"&Curp="+curp+"&Nss="+nss+"&Sueldo="+matricula+"&Depto="+depto + "&Fecha=" + fecha,
                 success: function (result) {  
 
 			console.log(result);
