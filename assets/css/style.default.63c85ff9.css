@@ -16900,7 +16900,7 @@ div.code-toolbar>.toolbar span:focus {
 
 .list-group-timeline .list-group-item::before {
     position: absolute;
-    left: 1.5rem;
+    left: 2.2rem;
     height: 100%;
     content: "";
     border-left: 1px solid #dee2e6
